@@ -1,5 +1,5 @@
 import Card, {CardVariant} from './components/Card.tsx';
-import UserList from "./components/UserList";
+import UserList from "./components/UserList.tsx";
 import {IUser} from "./types/types";
 
 const App = () => {
@@ -12,7 +12,7 @@ const users:IUser[]=[
             <Card  variant={CardVariant.outlined} width='200px' height='200px'>
                 <button>кнопка</button>
             </Card>
-            <UserList users={}/>
+            <UserList users={users}/>
         </div>
     );
 };
